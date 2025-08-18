@@ -6,16 +6,18 @@
 }
 
 body {
-  background-color: #fffaf2;
+  background-color: #1B4D3E;
+
   color: #333;
 }
 
 /* Header */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff9933;
+  background-color: transparent;
   padding: 15px 40px;
   color: white;
 }
@@ -38,20 +40,20 @@ nav a:hover {
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(255, 153, 51, 0.6), rgba(255, 213, 79, 0.6)),
-              url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
-  height: 70vh;
+  background: 
+              url('flare2.png') center/cover no-repeat;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 100px 20px 500px; 
 }
 
 .hero h1 {
   font-size: 2.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .hero p {
@@ -62,10 +64,11 @@ nav a:hover {
 .btn {
   background-color: #a8d5ba;
   color: #333;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .btn:hover {
@@ -75,6 +78,9 @@ nav a:hover {
 /* Menu */
 .menu {
   padding: 40px;
+  display: grid; /* ✅ Turns menu into a grid container */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* ✅ 3 per row on desktop */
+  gap: 20px;
 }
 
 .menu h2 {
@@ -84,11 +90,17 @@ nav a:hover {
 }
 
 .menu-category {
-  background: white;
+ background: #404860;
+  color: white;
   padding: 15px;
-  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  min-height: auto; /* ✅ Makes them appear square */
+  display: flex; /* ✅ Flexbox to center content */
+  flex-direction: column;
+  justify-content: flex-start;
+  
 }
 
 .menu-category h3 {
@@ -114,7 +126,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #8b5e3c;
+  background-color: #1B4D3E;
   color: white;
   text-align: center;
   padding: 15px 0;
